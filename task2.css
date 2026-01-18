@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.4s, transform 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#themeToggle {
+    display: none;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.05);
+}
+
+.page {
+    background-color: #f4f6f8;
+    color: #1f2933;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.header nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 70px 20px;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+}
+
+.about {
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #0f172a;
+    color: white;
+}
+
+.icons a {
+    margin: 0 12px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #60a5fa;
+}
+
+#themeToggle:checked ~ .page {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+#themeToggle:checked ~ .page .header {
+    background-color: #020617;
+}
+
+#themeToggle:checked ~ .page .card {
+    background-color: #1f2933;
+    color: white;
+}
+
+#themeToggle:checked ~ .toggle-btn {
+    background-color: #1f2933;
+    color: white;
+}
