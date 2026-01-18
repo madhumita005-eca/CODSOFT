@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background-color: #364660eb;
+    color: white;
+    border-radius: 7px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    margin:7px;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header-content h5 {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s ease-in;
+}
+
+.nav a:hover {
+    color: #93c4fd94;
+    cursor:pointer;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("images/aestheticbg5.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    color: rgb(68, 64, 64);
+    padding:7px;
+    border-radius: 7px;
+    margin:10px;
+    border: 2px dashed grey;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.11);
+    border-radius: 7px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #345a85;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero h1,
+.hero p {
+    margin-left: 45px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(630px, 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    animation: arrowMove 1.5s infinite;
+}
+
+@keyframes arrowMove {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+        opacity: 0;
+    }
+}
+
+.about-section {
+    background-image: url("images/aestheticbg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 120px;
+    color: white;
+    margin:10px;
+    border-radius: 7px;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin:1px;
+    border-radius: 7px;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color:#96aac0;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.edu-skill-section {
+    background-image: url("images/aestheticbg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 120px;
+    color: white;
+    text-align: center;
+    margin:10px;
+    border-radius: 7px;
+    border-radius: 7px;
+}
+
+.edu-skill-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.edu-skill-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.edu-skill-content h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color:#96aac0;
+}
+
+.skills-heading {
+    margin-top: 50px;
+}
+
+.edu-block {
+    margin-bottom: 40px;
+}
+
+.edu-block h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #93c5fd;
+}
+
+.edu-block p {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.edu-block span {
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    padding: 12px 28px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 15px;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.projects-section {
+    background-image: url("images/aestheticbg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    padding: 100px 120px;
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.projects-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.projects-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects-content h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #96aac0;
+    text-align: center;
+}
+
+.project-card {
+    margin-bottom: 40px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #93c5fd;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 25px;
+    color: #93c5fd;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.resume-section {
+    background-image: url("images/aestheticbg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    padding: 100px 120px;
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.resume-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.resume-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #96aac0;
+}
+
+.resume-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.resume-links a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.resume-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.internships-section {
+    background-image: url("images/aestheticbg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    padding: 100px 120px;
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.internships-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.internships-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.internships-content h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #96aac0;
+    text-align: center;
+}
+
+.internship-card {
+    margin-bottom: 50px;
+}
+
+.internship-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #93c5fd;
+}
+
+.company {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.duration {
+    font-size: 14px;
+    color: #e5e7eb;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.task-block {
+    margin-bottom: 15px;
+}
+
+.task-block p {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.task-block a {
+    font-size: 14px;
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.task-block a:hover {
+    text-decoration: underline;
+}
+
+.internship-links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #93c5fd;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.internship-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    background-image: url("images/aestheticbg4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    padding: 100px 120px;
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #96aac0;
+}
+
+.contact-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-links a {
+    display: block;
+    margin: 15px 0;
+    font-size: 16px;
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.contact-links i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #364660eb;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+}
